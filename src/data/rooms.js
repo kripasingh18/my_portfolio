@@ -1,0 +1,125 @@
+export const roomsData = [
+  {
+    id: "personal",
+    number: "01",
+    name: "Personal Sanctuary",
+    subtitle: "Personality, interests, music & story",
+    tagline: "A quiet space for thoughts, creative energy, and the personal dimensions behind the code.",
+    color: "#0d033b",
+    glowColor: "#a99bdb",
+    position: [-7, 2.8, 6],
+    cameraPos: [-7, 4.0, 12],
+    targetPos: [-7, 3.2, 6],
+    icon: "Heart",
+    discoveryBadge: "Sanctuary Seeker",
+    lore: "Overlooking a quiet cloud sea and waterfalls, this cantilevered glass room houses Kripa's music player, sketchbook, and personal story.",
+    interactiveObjects: [
+      { id: "music", title: "Ambient Music Player", type: "music", label: "Music & Vibes" },
+      { id: "journal", title: "Personal Story", type: "journal", label: "My Story" },
+      { id: "sketchbook", title: "Creative Journal", type: "sketchbook", label: "Sketchbook" },
+    ]
+  },
+  {
+    id: "developer",
+    number: "02",
+    name: "Developer Studio",
+    subtitle: "Programming skills, journey & GitHub",
+    tagline: "Code is how I turn abstract ideas into functional, living software.",
+    color: "#8ECFFF",
+    glowColor: "#172650",
+    position: [2, 6.2, 0],
+    cameraPos: [2, 7.8, 6],
+    targetPos: [2, 6.8, 0],
+    icon: "Code",
+    discoveryBadge: "Code Architect",
+    lore: "An elevated glass studio pod with panoramic space views, interactive tech stack screens, and GitHub repositories.",
+    interactiveObjects: [
+      { id: "skills", title: "Technical Stack Console", type: "skills", label: "Technical Skills" },
+      { id: "github", title: "GitHub Sync Terminal", type: "github", label: "GitHub Profile" },
+    ]
+  },
+  {
+    id: "art",
+    number: "03",
+    name: "Art Studio",
+    subtitle: "Creative work, visual design & experiments",
+    tagline: "Visual storytelling through digital art, vector graphics, and brand design.",
+    color: "#F2C9ED",
+    glowColor: "#8067D9",
+    position: [13, 2.5, 3],
+    cameraPos: [13, 4.0, 9],
+    targetPos: [13, 3.2, 3],
+    icon: "Palette",
+    discoveryBadge: "Visionary Artist",
+    lore: "Curved glass terrace studio with an art easel, digital tablet, and outdoor sky telescope.",
+    interactiveObjects: [
+      { id: "gallery", title: "Artwork Gallery", type: "gallery", label: "View Artworks" },
+      { id: "adobeTools", title: "Digital Design Suite", type: "adobeTools", label: "Design Tools" },
+    ]
+  },
+  {
+    id: "innovation",
+    number: "04",
+    name: "Innovation Lab",
+    subtitle: "Projects, research & SONARIS",
+    tagline: "Exploring oceanic acoustic telemetry and bathymetric data analysis.",
+    color: "#8ECFFF",
+    glowColor: "#172650",
+    position: [3, 1.2, 3],
+    cameraPos: [3, 2.6, 9],
+    targetPos: [3, 1.8, 3],
+    icon: "Radio",
+    discoveryBadge: "Deep-Sea Explorer",
+    lore: "Located within the central glowing portal, featuring project SONARIS with an animated 3D holographic seabed.",
+    interactiveObjects: [
+      { id: "sonarisCaseStudy", title: "Project SONARIS", type: "sonarisCaseStudy", label: "SONARIS Case Study" },
+      { id: "sonarData", title: "Acoustic Telemetry Feed", type: "sonarData", label: "Telemetry Feed" },
+    ]
+  },
+  {
+    id: "achievements",
+    number: "05",
+    name: "Achievements Gallery",
+    subtitle: "Genuine accomplishments & milestones",
+    tagline: "Grateful for milestones achieved across hackathons, coursework, and leadership.",
+    color: "#C7B7FF",
+    glowColor: "#F2C9ED",
+    position: [5, 9.8, -2],
+    cameraPos: [5, 11.2, 5],
+    targetPos: [5, 10.2, -2],
+    icon: "Award",
+    discoveryBadge: "Milestone Keeper",
+    lore: "Crown observation deck surrounded by luminous halo rings and the grand futuristic glass spire.",
+    interactiveObjects: [
+      { id: "achievements", title: "Honors & Credentials", type: "achievements", label: "View Milestones" },
+    ]
+  },
+  {
+    id: "contact",
+    number: "06",
+    name: "Contact Lounge",
+    subtitle: "Contact information & professional links",
+    tagline: "Every great idea begins with a connection. Let's build something meaningful.",
+    color: "#F2F5FF",
+    glowColor: "#8ECFFF",
+    position: [11, 2.0, 11],
+    cameraPos: [11, 3.5, 17],
+    targetPos: [11, 2.6, 11],
+    icon: "MessageSquare",
+    discoveryBadge: "Cosmic Connector",
+    lore: "A panoramic lounge overlooking the sweeping glass promenade with direct links to reach Kripa.",
+    interactiveObjects: [
+      { id: "contact", title: "Communication Console", type: "contact", label: "Send Message" },
+      { id: "resume", title: "Holocron Resume Capsule", type: "resume", label: "Resume Document" },
+    ]
+  }
+];
+
+export const roomMapNav = [
+  { id: "personal", number: "01", name: "Personal Sanctuary", icon: "Heart", color: "#C7B7FF" },
+  { id: "developer", number: "02", name: "Developer Studio", icon: "Code", color: "#8ECFFF" },
+  { id: "art", number: "03", name: "Art Studio", icon: "Palette", color: "#F2C9ED" },
+  { id: "innovation", number: "04", name: "Innovation Lab", icon: "Radio", color: "#8ECFFF" },
+  { id: "achievements", number: "05", name: "Achievements Gallery", icon: "Award", color: "#C7B7FF" },
+  { id: "contact", number: "06", name: "Contact Lounge", icon: "MessageSquare", color: "#F2F5FF" },
+];
