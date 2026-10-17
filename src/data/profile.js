@@ -1,43 +1,79 @@
+
 export const profileData = {
   name: "Kripa Singh",
   title: "CSE Student & Creative Technologist",
   tagline: "A journey through my world",
   brand: "KRIPAVERSE",
-  shortIntro: "Welcome to my little universe — explore, discover and get to know the person behind the code, creativity and dreams.",
-  bio: "Hi, I'm Kripa. I am a Computer Science & Engineering student passionate about the intersection of elegant code, interactive technology, and digital artistry. I believe in crafting software experiences that are not only robust and purposeful, but also aesthetically inspiring.",
-  philosophy: "I combine technology and creativity to explore ideas, build projects, and turn imagination into something real.",
+
+  shortIntro:
+    "Hey, stranger. Welcome to my little universe. A space for curiosity, creativity, and everything I'm still discovering.",
+
+  bio:
+    "Hey, stranger. Welcome to my little universe. ✨ I'm Kripa — a CSE student, a creative thinker, and a curious soul figuring things out one idea at a time. I love painting, solving puzzles, and exploring new things in technology and AI. I'm drawn to ideas that make me think differently, challenge what I know, and inspire me to create something of my own. I don't have everything figured out, and honestly, that's part of the journey. There's always something new to learn, something new to imagine, and another version of myself to grow into. Take a look around. There's a little more to me than meets the eye.",
+
+  philosophy:
+    "I'm here to keep learning, keep creating, and turn the ideas in my head into things that exist in the real world.",
+
   education: {
     degree: "B.Tech in Computer Science and Engineering",
-    focus: "Core CS, Systems, Web Development & Creative Computing",
+    focus: "Learning, problem-solving, technology, and creative exploration",
     period: "2023 - Present",
   },
+
   contact: {
     email: "kripasingh18@gmail.com",
     github: "https://github.com/kripasingh18",
     githubUsername: "kripasingh18",
-    linkedin: "https://linkedin.com/in/kripa-singh", // Configurable
-    resumeUrl: "#resume-modal", // Opens resume preview modal
+    linkedin: "https://linkedin.com/in/kripa-singh",
+    resumeUrl: "#resume-modal",
     location: "India • Cosmic Wanderer",
   },
+
   interests: [
-    { id: "music", label: "Music", icon: "Music", desc: "Ambient synthwaves, lo-fi beats, and cinematic soundscapes that inspire late-night code and quiet reflection." },
-    { id: "books", label: "Books & Learning", icon: "BookOpen", desc: "Sci-fi literature, computational theory, creative philosophy, and visual storytelling." },
-    { id: "travel", label: "Journeys", icon: "Compass", desc: "Exploring quiet landscapes, observing starry skies, and finding inspiration in serene natural spaces." },
-    { id: "art", label: "Art & Design", icon: "Palette", desc: "Digital painting, vector composition, UI/UX aesthetics, and concept illustration." },
-    { id: "dreams", label: "Aspirations", icon: "Sparkles", desc: "Building impactful software, advancing innovative ocean & space exploration tools, and continuous self-growth." },
+    {
+      id: "painting",
+      label: "Painting & Creativity",
+      icon: "Palette",
+      desc: "I love painting and expressing ideas creatively. It's a chance to explore colours, experiment, and create something that feels like my own.",
+    },
+    {
+      id: "puzzles",
+      label: "Puzzles & Problem-Solving",
+      icon: "Brain",
+      desc: "I enjoy solving puzzles and working through challenges. There's something satisfying about exploring different possibilities until things click.",
+    },
+    {
+      id: "technology",
+      label: "Technology & AI",
+      icon: "Sparkles",
+      desc: "I'm curious about new developments in technology and AI. I love exploring what's possible and discovering ideas that make me see things differently.",
+    },
+    {
+      id: "learning",
+      label: "Always Learning",
+      icon: "BookOpen",
+      desc: "I'm still figuring things out, asking questions, trying unfamiliar things, and learning along the way. For me, growth starts with curiosity.",
+    },
+    {
+      id: "dreams",
+      label: "Dreaming & Building",
+      icon: "Compass",
+      desc: "I want to keep growing, explore ideas beyond what I already know, and turn the things I imagine into something real.",
+    },
   ],
+
   personalJournal: [
     {
-      title: "Why I Code",
-      text: "Code is my modern canvas. It takes logic, mathematics, and structure and translates them into living, breathing digital worlds that anyone across the planet can experience."
+      title: "A Work in Progress",
+      text: "I don't think I need to have my entire life figured out right now. I'm learning as I go, discovering what excites me, and becoming a little more confident with every new thing I try.",
     },
     {
-      title: "The Creative Balance",
-      text: "Technology without aesthetics can feel rigid; art without structure lacks utility. Walking the line between technical depth and artistic intuition is where I feel most at home."
+      title: "Where Art Meets Curiosity",
+      text: "Painting lets me explore ideas creatively, while puzzles challenge me to think differently. I love that both leave room for experimentation, unexpected discoveries, and finding my own way forward.",
     },
     {
-      title: "Looking Outward",
-      text: "Whether analyzing acoustic signals beneath the oceans or looking up at the stars, curiosity has always been my compass."
-    }
-  ]
+      title: "Always Wondering What's Next",
+      text: "New technology and AI remind me how much there is still to explore. I want to stay curious, keep asking questions, and never lose that feeling of excitement when I discover something new.",
+    },
+  ],
 };
