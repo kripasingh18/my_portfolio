@@ -10,18 +10,11 @@ import {
 } from 'lucide-react';
 
 import { profileData } from '../../../data/profile';
-import { cosmicAudio } from '../../../utils/audio';
 
 export default function PersonalModal({ isOpen, onClose }) {
   const [activeTab, setActiveTab] = useState('story');
-  const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
   if (!isOpen) return null;
-
-  const handleAudioToggle = () => {
-    const isNowPlaying = cosmicAudio.toggleSound();
-    setIsPlayingAudio(isNowPlaying);
-  };
 
   return (
     <div className="fixed top-16 right-4 sm:right-6 bottom-10 sm:bottom-12 z-40 w-[calc(100vw-32px)] sm:w-[440px] max-w-lg pointer-events-auto animate-slideInRight flex flex-col glass-drawer rounded-3xl border border-[#B9A7FF]/30 shadow-2xl overflow-hidden text-[#EAF4FF]">
@@ -130,39 +123,49 @@ export default function PersonalModal({ isOpen, onClose }) {
 
         {/* Music & Vibes */}
         {activeTab === 'music' && (
-          <div className="space-y-3.5 animate-fadeIn">
+          <div className="space-y-4 animate-fadeIn">
             <div className="space-y-1">
-              <h3 className="text-sm font-bold text-[#EAF4FF]">
-                A little space to pause
+              <div className="text-[10px] font-mono uppercase tracking-widest text-[#55CFFF]">
+                A moment beyond the noise
+              </div>
+              <h3 className="text-lg font-bold font-['Space_Grotesk'] text-[#EAF4FF]">
+                Into the Unknown
               </h3>
               <p className="text-xs leading-relaxed text-[#B9A7FF]">
-                Take a breath, explore the room, and enjoy a moment away
-                from the noise.
+                A quiet soundtrack for curiosity, reflection, and everything
+                still waiting to be discovered.
               </p>
             </div>
 
-            <div className="p-4 rounded-2xl bg-[#11194A]/60 border border-[#55CFFF]/25 flex items-center justify-between gap-3">
+            <div className="p-4 rounded-2xl bg-gradient-to-br from-[#171746]/90 to-[#11194A]/70 border border-[#826BFF]/30 space-y-4">
               <div className="flex items-center gap-3">
-                <span className="p-2 rounded-xl bg-[#55CFFF]/15 text-[#55CFFF]">
-                  <Volume2 className="w-5 h-5 animate-pulse" />
-                </span>
-
-                <div>
-                  <div className="text-xs font-bold text-[#EAF4FF]">
-                    Cosmic Pad Synthesizer
+                <div className="w-12 h-12 shrink-0 rounded-xl bg-gradient-to-br from-[#826BFF]/40 to-[#55CFFF]/20 border border-[#B9A7FF]/30 flex items-center justify-center">
+                  <Music className="w-5 h-5 text-[#B9A7FF]" />
+                </div>
+                <div className="min-w-0">
+                  <div className="text-sm font-semibold text-[#EAF4FF]">
+                    Into the Unknown
                   </div>
                   <div className="text-[11px] text-[#B9A7FF]">
-                    Ambient soundscape
+                    Blue Deer Studio · feat. Nichole Kreglow
                   </div>
                 </div>
               </div>
 
-              <button
-                onClick={handleAudioToggle}
-                className="cosmic-btn-secondary text-xs py-1.5 px-3"
+              <audio
+                controls
+                preload="metadata"
+                className="w-full"
+                style={{ height: '40px' }}
+                src="/audio/into-the-unknown.mp3"
               >
-                {isPlayingAudio ? 'Mute' : 'Play Sound'}
-              </button>
+                Your browser does not support audio playback.
+              </audio>
+
+              <p className="text-[10px] leading-relaxed text-[#B9A7FF]/80">
+                Press play when you are ready. The music will only start
+                when you choose.
+              </p>
             </div>
 
             <div className="p-3 rounded-xl bg-[#0C1236]/70 border border-white/5">
